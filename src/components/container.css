@@ -1,0 +1,194 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 55%;
+    height: 75vh;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f1c9a8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inputTodo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.inputTodo input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #f6d8bf;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0 10px 10px rgba(251, 123, 4, 0.1);
+}
+
+.inputTodo input:hover {
+    box-shadow: 0 10px 10px rgba(251, 123, 4, 0.2);
+}
+
+.inputTodo button {
+    padding: 10px 30px;
+    background-color: #007bff;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 5px 5px rgba(4, 20, 251, 0.1);
+}
+
+.inputTodo button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 10px 10px rgba(4, 20, 251, 0.2);
+}
+
+.inputTodo button:disabled {
+    background-color: #6f7174;
+}
+
+.finishTodo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.border {
+    border-bottom: 1px solid #848080;
+    margin: auto;
+    width: 40vw;
+    box-shadow: 0 0 10px rgba(88, 87, 87, 0.5);
+}
+
+.noTodos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    height: 50%;
+    font-size: 20px;
+    color: #848080;
+}
+
+.displayContainer {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.displayTodo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: #848080;
+}
+
+.displayTodo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.editTodo {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.editTodo button {
+    padding: 5px 25px;
+    background-color: #007bff;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.editTodo button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 10px 10px rgba(4, 20, 251, 0.2);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #007bff;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .inputTodo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .inputTodo input {
+        width: 100%;
+    }
+
+    .inputTodo button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .displayContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .displayTodo {
+        width: 100%;
+    }
+
+    .editTodo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .editTodo button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffc494;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    padding: 10px 40px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  li {
+    text-align: center;
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    .navbar {
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
+  
+    ul {
+      display: none;
+    }
+  
+  }
